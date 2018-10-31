@@ -1,0 +1,38 @@
+@import "../variables";
+
+p {
+	font-size: $paragraph-font-size;
+	color: $text-color;
+	font-weight: 300;
+}
+h2 {
+	font-size: $section-header-font-size;
+	font-weight: 700;
+	color: $section-header-gray;
+	margin: 0;
+}
+h1 {
+	font-size: $page-header-font-size;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $section-header-gray;
+	margin: 0;
+}
+a {
+	font-size: $links-font-size;
+	font-weight: 300;
+	color: $links-color;
+	text-decoration: none;
+	&:hover {
+		cursor: pointer;
+		color: $yellow-color;
+	}
+}
+button, .btn {
+	font-size: $button-font-size;
+	color: #ffffff;
+	font-weight: 300;
+	line-height: 42px;
+	vertical-align: middle;
+	text-align: center;
+}

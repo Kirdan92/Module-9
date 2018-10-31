@@ -1,0 +1,23 @@
+@import "../variables";
+
+button, .btn {
+	max-width: 98px;
+	max-height: 40px;
+	background-color: $dark-gray;
+	border: none;
+	border-radius: 3px;
+	padding: 0 10px;
+	&:hover {
+		background-color: #bababa;
+		cursor: pointer;
+	}
+}
+.btn-warning {
+	background-color: $dark-orange;
+	&:hover {
+		background-color: $yellow-color;
+	}
+}
+.btn-sm {
+	width: 41px;
+}
