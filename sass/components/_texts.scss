@@ -1,5 +1,8 @@
 @import "../variables";
-
+body {
+	font-size: $paragraph-font-size;
+	color: $text-color;
+}
 p {
 	font-size: $paragraph-font-size;
 	color: $text-color;
@@ -28,6 +31,11 @@ a {
 		color: $yellow-color;
 	}
 }
+.small-link {
+	@extend a;
+	font-size: $sm-links-font-size;
+
+}
 button, .btn {
 	font-size: $button-font-size;
 	color: #ffffff;
@@ -35,4 +43,22 @@ button, .btn {
 	line-height: 42px;
 	vertical-align: middle;
 	text-align: center;
+}
+i {
+	font-size: $icon-fs;
+	color: $dark-gray;
+	&:hover {
+		cursor: pointer;
+		color: $yellow-color;
+	}
+}
+.btn-warning-icon {
+	color: #ffffff;
+}
+.link-icon {
+	cursor: pointer;
+	color: $yellow-color;
+}
+.col-num {
+	font-size: 16px;
 }

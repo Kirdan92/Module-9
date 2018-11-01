@@ -11,7 +11,8 @@
 	<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 	<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-	<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+	<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <br>
+	<a class ="small-link" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
 	<ul>
 	  <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
 	  <li>Lorem ipsum dolor <strong>sit amet</strong></li>
@@ -22,11 +23,60 @@
 	  <li>Lorem ipsum dolor <strong>sit amet</strong></li>
 	  <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
 	  <div class="btn btn-succes">Przycisk</div>
-	  
-
-</ol>
+	</ol>
 	  <button class="btn btn-success">Przycisk</button>
 	  <button class="btn btn-warning">Przycisk</button>
-	  <button class="btn btn-sm"><i class="glyphter icon-arrow-down"></i></button>
+	  <button class="btn btn-sm btn-warning"><i class="glyphter icon-arrow-down btn-warning-icon "></i></button>
+
+	  <div id="table-container">
+	  	<table class="link-table">
+	  		<tr class="row">
+	  			<td class="col"><h2>Line header</h2></td>
+	  			<td class="col"><a href="">link</a></td>
+	  			<td class="col-icon "><i class="glyphter icon-arrow-down"></i></td>
+	  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
+	  		</tr>
+	  		<tr class="row">
+	  			<td class="col"><h2>Line header</h2></td>
+	  			<td class="col"><a href="">link</a></td>
+	  			<td class="col-icon "><i class="glyphter icon-arrow-down"></i></td>
+	  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
+	  		</tr>
+	  	</table>
+	  	<table class="num-table">
+	  		<tr class="row">
+	  			<td class="col"><h2>Line header</h2></td>
+	  			<td class="col-num">123</td>
+	  		</tr>
+	  		<tr class="row">
+	  			<td class="col"><h2>Line header</h2></td>
+	  			<td class="col-num">456</td>
+	  		</tr>
+	  	</table>
+	  	<table class="large-table">
+	  		<tr class="header-row">
+	  			<th><span>Column name<i class="glyphter icon-arrow-up"></i></span></th>
+	  			<th><span>Column name<i class="glyphter icon-arrow-up"></i></span></th>
+	  		</tr>
+	  		<tr class="row">
+	  			<td class="col">KText</td>
+	  			<td class="col">123</td>
+	  		</tr>
+	  		<tr class="row">
+	  			<td class="col">Lorem</td>
+	  			<td class="col">456</td>
+	  		</tr>
+	  	</table>
+	  </div>
+
+	  <div class="inputs-container">
+	  	<textarea id="basic" class="basic" name="basic" placeholder="Text input"></textarea> <br>
+	  	<input type="text" id="fname" name="firstname" placeholder="Placeholder">
+	  	<div class="password-input-container">
+        	<input id="password-field" type="password" class="form-control" name="password" placeholder="password">
+        	<i class="glyphter icon-password" aria-hidden="true"></i>
+        </div>
+	  </div>
+
 </body>
 </html>

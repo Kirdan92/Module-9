@@ -16,8 +16,25 @@ button, .btn {
 	background-color: $dark-orange;
 	&:hover {
 		background-color: $yellow-color;
+		i {
+			color: #ffffff;
+		}
 	}
 }
 .btn-sm {
 	width: 41px;
+}
+
+/*Navigation*/
+nav {
+	line-height: 60px;
+	ul{
+		list-style-type: none;
+		margin: 0;
+		li{
+			display: inline-block;
+			padding: 0 18px;
+			border-left: 2px solid $light-gray;
+		}
+	}
 }

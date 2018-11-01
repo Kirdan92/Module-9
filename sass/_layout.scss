@@ -1,0 +1,31 @@
+#wrapper {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: 
+            "sidebar header"
+            "sidebar main";
+
+}
+header {
+	background-color: red;
+	grid-area: header;
+	height: 60px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#sidebar {
+	background-color: blue;
+	grid-area: sidebar;
+	max-width: 190px;
+	min-width: 180px;
+}
+#sidebar-short {
+	max-width: 50px;
+}
+main {
+	background-color: green;
+	grid-area: main;
+	height: 100vh;
+}

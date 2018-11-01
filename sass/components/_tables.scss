@@ -1,0 +1,73 @@
+@import "../variables";
+/*Table styles*/
+table {
+	margin-top: 40px; 
+	border-collapse: collapse;
+}
+.link-table {
+	width: 686px;
+}
+.row {
+	&:hover {
+		background-color: $light-gray;
+		cursor: pointer;
+		.col-icon {
+			i{
+				visibility: visible;
+			}
+			
+		}
+	}
+}
+.col {
+	border-top: 2px solid $light-gray;
+	border-bottom: 2px solid $light-gray;
+	padding: 20px 18px;
+}
+.col-icon {
+	@extend .col;
+	width: 15px;	
+	i{
+		visibility: hidden;
+	}
+	
+}
+.num-table {
+	width: 310px;
+	margin-top: 40px;
+	.col {
+		border-top: none;
+	}
+	.col-num {
+		border-bottom: 2px solid $light-gray;
+		text-align: right;
+		font-size: 16px;
+	}
+}
+.large-table {
+	font-size: 13px;
+	th {
+		padding: 20px 14px;
+		color: $light-gray;
+		span {
+			padding: 8px;
+			border-radius: 3px;
+			i {
+				visibility: hidden;
+				margin-left: 10px;
+				font-size: 13px;
+				vertical-align: middle;
+			}
+			&:hover {
+				background-color: $bg-color;
+				color: $text-color;
+				cursor: pointer;
+				i {
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+
