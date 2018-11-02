@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Style Guide</title>	
+	<title>Solo Project</title>	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="vendor/css/Glyphter.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,16 +12,49 @@
 		<header>
 			<nav>
 				<ul>
-					<li>wallet</li>
-					<li>notification</li>
-					<li>profile</li>
-					<li>exit</li>
+					<li id="wallet-nav" onclick="showDropdown()">
+						<i class="glyphter icon-wallet"></i>
+						<h1>$1,500.00</h1>
+						<i id="wallet-arrow" class="glyphter icon-arrow-down"></i>
+					  	<div id="wallet-dropdown" class="dropdown-content">
+							<table class="wallet-table">
+						  		<tr class="row">
+						  			<td class=""><h2>CPA</h2></td>
+						  			<td class="col-dd-l">$1000</td>
+						  		</tr>
+						  		<tr class="row">
+						  			<td class=""><h2>CPL</h2></td>
+						  			<td class="col-dd-l">$1100</td>
+						  		</tr>
+					  			<tr class="row">
+						  			<td class=""><h2>Turnover</h2></td>
+						  			<td class="col-dd-l">$1030</td>
+						  		</tr>
+					  			<tr class="row">
+						  			<td class=""><h2>Net deposit</h2></td>
+						  			<td class="col-dd-l">$1000</td>
+						  		</tr>
+						  	</table>
+					 	</div>
+					</li>
+					<li><i id="notification-bell" class="glyphter icon-notification"><span class="new-notification"></span></i></li>
+					<li id="profile-nav"><i class="glyphter icon-profile"></i> <a class="small-link" href="#">Leonardo Dicaprio</a></li>
+					<li id="quit-nav"><i class="glyphter icon-quit"></i></li>			
 				</ul>
 			</nav>
 		</header>
-		<div id="sidebar">2</div>
+		<div id="sidebar">
+			<div id="sidebar-header">
+				<img src="images/logo.png">
+				<div id="hamburger">
+					<div class="hamburger-part"></div>
+					<div class="hamburger-part"></div>
+					<div class="hamburger-part"></div>
+				</div>
+			</div>
+		</div>
 		<main>3</main>
 	</div>
-
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
