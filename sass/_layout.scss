@@ -1,6 +1,6 @@
 #wrapper {
 	display: grid;
-	grid-template-columns: 190px 1fr;
+	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr;
 	grid-template-areas: 
             "sidebar header"
@@ -18,12 +18,17 @@ header {
 	position: sticky;
 	top: 0;
 }
+#sidebar-grid {
+	grid-area: sidebar;
+	width: 190px;
+	min-width: 190px;
+	height: 100%;
+}
 #sidebar {
 	background-color: $sidebar-color;
 	min-width: 190px;
 	position: fixed;
 	height: 100%;
-	padding: 20px;
 }
 #sidebar-short {
 	max-width: 50px;
@@ -40,6 +45,9 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	line-height: 60px;
+	height: 60px;
+	padding: 0 18px;
 	img {
 		
 	}
@@ -52,6 +60,39 @@ main {
 		}
 		.hamburger-part:first-of-type {
 			margin: 0;
+		}
+	}
+}
+#sidebar {
+	nav {
+		width: 100%;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li {
+				padding-left: 20px;
+				height: 40px;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				font-size: $paragraph-font-size;
+				color: $navbar-font-color;
+				i {
+					margin-right: 14px;
+					font-size: 13px;
+				}
+				&:hover {
+					background-color: #282828;
+					border-left: 4px solid $dark-orange;
+					padding-left: 16px;
+					color: #ffffff;
+					cursor: pointer;
+					i {
+						color: #ffffff;
+					}
+				}
+			}
 		}
 	}
 }
