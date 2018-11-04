@@ -18,81 +18,57 @@ header {
 	position: sticky;
 	top: 0;
 }
-#sidebar-grid {
-	grid-area: sidebar;
-	width: 190px;
-	min-width: 190px;
-	height: 100%;
-}
-#sidebar {
-	background-color: $sidebar-color;
-	min-width: 190px;
-	position: fixed;
-	height: 100%;
-}
-#sidebar-short {
-	max-width: 50px;
-}
+
+
 main {
 	background-color: $bg-color;
 	grid-area: main;
-	height: 100vh;
-}
-
-/*Navigation -Sidebar*/
-#sidebar-header {
+	height: 100%;
+	padding: 16px 18px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	line-height: 60px;
-	height: 60px;
-	padding: 0 18px;
-	img {
-		
-	}
-	#hamburger {
-		.hamburger-part {
-		    width: 18px;
-		    height: 2px;
-		    background-color: $dark-gray;
-		    margin-top: 6px;
-		}
-		.hamburger-part:first-of-type {
-			margin: 0;
-		}
+}
+section {
+	width: 1056px;
+ 	max-width: 1056px;
+ 	background-color: #ffffff;
+ 	height: auto;
+ 	margin-bottom: 20px;
+ 	.section-body {
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		flex-direction: column;
+ 	}
+}
+.date-range-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 0;
+	border-bottom: 1px solid $light-gray;
+}
+.table-container {
+	display: flex; 
+	flex-direction: row;
+	margin-bottom: 70px;
+	table:first-of-type {
+		margin-right: 60px;
 	}
 }
-#sidebar {
-	nav {
-		width: 100%;
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
-			li {
-				padding-left: 20px;
-				height: 40px;
-				text-align: left;
-				display: flex;
-				align-items: center;
-				font-size: $paragraph-font-size;
-				color: $navbar-font-color;
-				i {
-					margin-right: 14px;
-					font-size: 13px;
-				}
-				&:hover {
-					background-color: #282828;
-					border-left: 4px solid $dark-orange;
-					padding-left: 16px;
-					color: #ffffff;
-					cursor: pointer;
-					i {
-						color: #ffffff;
-					}
-				}
-			}
-		}
+.chart-container {
+	text-align: left;
+	margin-bottom: 55px;
+	h2 {
+		margin-bottom: 40px;
 	}
+	.chart {
+		padding: 0 17px;
+	}
+}
+.links-container {
+	padding-top: 23px;
 }

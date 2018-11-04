@@ -62,3 +62,9 @@ i {
 .col-num {
 	font-size: 16px;
 }
+.section-header {
+	border-bottom: 1px solid $light-gray;
+	padding: 15px 0 18px 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}

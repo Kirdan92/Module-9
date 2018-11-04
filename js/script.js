@@ -18,3 +18,11 @@ window.onclick = function(event) {
     }
   }
 }
+
+/*Switch sidebar - Hamburger*/
+function switchSidebar() {
+    document.getElementById("sidebar").classList.toggle("sidebar-big");
+    document.getElementById("sidebar-grid").classList.toggle("sidebar-big");
+    document.getElementById("sidebar").classList.toggle("sidebar-small");
+    document.getElementById("sidebar-grid").classList.toggle("sidebar-small");
+}

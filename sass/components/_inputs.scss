@@ -55,3 +55,18 @@ textarea {
 	 }
 	
 }
+fieldset {
+	border: 1px solid $dark-gray;
+	border-radius: 3px;
+	padding-top: 8.750px;
+	line-height: 25px;
+	margin-right: 13px;
+}
+input[type="date"] {
+	border: none;
+	width: 125px;
+}
+#startDate {
+		border-right: 1px solid $dark-gray;
+		margin-right: 15px;
+	}

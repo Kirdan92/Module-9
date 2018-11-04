@@ -1,7 +1,7 @@
 @import "../variables";
 
 button, .btn {
-	max-width: 98px;
+	max-width: 130px;
 	max-height: 40px;
 	background-color: $dark-gray;
 	border: none;
@@ -14,10 +14,13 @@ button, .btn {
 }
 .btn-warning {
 	background-color: $dark-orange;
+	i {
+		color: #ffffff;
+	}
 	&:hover {
 		background-color: $yellow-color;
 		i {
-			color: #ffffff;
+			color: $dark-gray;
 		}
 	}
 }
@@ -25,3 +28,6 @@ button, .btn {
 	width: 41px;
 }
 
+.btn-link {
+	margin: 23px auto;
+}
