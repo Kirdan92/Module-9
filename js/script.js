@@ -1,3 +1,8 @@
+var header = document.querySelector('header');
+var sidebar = document.getElementById("sidebar");
+var sidebarGrid = document.getElementById("sidebar-grid");
+
+
 /* Show dropdown for wallet on click*/
 function showDropdown() {
     document.getElementById("wallet-dropdown").classList.toggle("show");
@@ -19,10 +24,19 @@ window.onclick = function(event) {
   }
 }
 
-/*Switch sidebar - Hamburger*/
+/*Switch sidebar - click on Hamburger*/
 function switchSidebar() {
-    document.getElementById("sidebar").classList.toggle("sidebar-big");
-    document.getElementById("sidebar-grid").classList.toggle("sidebar-big");
-    document.getElementById("sidebar").classList.toggle("sidebar-small");
-    document.getElementById("sidebar-grid").classList.toggle("sidebar-small");
+    sidebar.classList.toggle("sidebar-big");
+    sidebarGrid.classList.toggle("sidebar-big");
+    sidebar.classList.toggle("sidebar-small");
+    sidebarGrid.classList.toggle("sidebar-small");
 }
+/*Show-Hide Header - click on Hamburger*/
+function toggleHeader(visible) {
+  header.classList.toggle('show', visible);
+}
+
+document.querySelector('#hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleHeader()
+});
