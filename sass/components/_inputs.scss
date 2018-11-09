@@ -1,9 +1,25 @@
 @import "../variables";
 /*INPUTS*/
-input[type=text], select, input[type="password"]{
+form {
+    display: table;
+    padding: 20px 10px;
+}
+
+div.form-row {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+label {
+    padding-right: 10px;
+}
+input[type=text], select, input[type="password"], input[type="email"], input[type="tel"]{
     line-height: 42px;
     height: 40px;
-    max-width: 160px;
+    max-width: 260px;
     padding-left: 18px;
     font-size: 14px;
     font-weight: 300;
@@ -70,3 +86,4 @@ input[type="date"] {
 		border-right: 1px solid $dark-gray;
 		margin-right: 15px;
 	}
+

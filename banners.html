@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<meta charset="UTF-8">
-	<title>Solo Project</title>	
+	<title>Banners</title>	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="vendor/css/Glyphter.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -57,11 +57,11 @@
 				</div>
 				<nav>
 					<ul>
-						<li class="active-page"><i class="glyphter icon-general"></i><span class="sidebar-text">General</span></li>
+						<li><a href="index.html"><i class="glyphter icon-general"></i><span class="sidebar-text">General</span></a></li>
 						<li><i class="glyphter icon-details"></i><span class="sidebar-text">Details</span></li>
 						<li><a href="links.html"><i class="glyphter icon-links"></i><span class="sidebar-text">Links</span></a></li>
-						<li><a href="banners.html"><i class="glyphter icon-banners"></i><span class="sidebar-text">Banners</span></a></li>
-						<li><a href="personaldata.html"><i class="glyphter icon-personaldata"></i><span class="sidebar-text">Personal data</span></a></li>
+						<li class="active-page"><a href="banners.html"><i class="glyphter icon-banners"></i><span class="sidebar-text">Banners</span></a></li>
+						<li><i class="glyphter icon-personaldata"></i><span class="sidebar-text">Personal data</span></li>
 						<li><i class="glyphter icon-payout"></i><span class="sidebar-text">Payout</span></li>
 						<li><i class="glyphter icon-postback"></i><span class="sidebar-text">Postback</span></li>
 					</ul>
@@ -77,111 +77,45 @@
 			</div>
 		</div>
 		<main>
-			<section id="general-section">
-				<h2 class="section-header">General Statistc</h2>
-				<div class="section-body">					
-				<div class="date-range-container">
-						<fieldset>
-							<input type="date" id="startDate" name="startDate" value="16.05.2016">
-							<input type="date" id="endDate" name="endDate" value="16.05.2016">
-							<i class="glyphter icon-calendar"></i>
-						</fieldset>
-						<button class="btn btn-sm btn-warning"><i class="glyphter icon-refresh"></i></button>
-					</div>
-					<div class="table-container">
-				  	<table class="num-table">
-				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col-num">123</td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col-num">456</td>
-				  		</tr>
-			  		</table>
-				  	<table class="num-table">
-				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col-num">123</td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col-num">456</td>
-				  		</tr>
-			  		</table>
-			  		</div>
-			  		<div class="chart-container">
-			  			<h2>Earnings chart</h2>
-			  			<div class="chart">
-			  				<img src="images/graph.png" alt="">
-			  			</div>
-			  			
-			  		</div>
-				</div>
-			</section>
 			<section id="links-section">
-				<h2 class="section-header">Links</h2>
+				<h2 class="section-header">Banners</h2>
 				<div class="section-body">		
 					<div class="links-container"></div>
 					<button class="btn btn-warning">+ add new</button>	
 				  	<table class="link-table">
 				  		<tr class="row">
-				  			<td class="col"><h2>Home page</h2></td>
-				  			<td class="col"><a href="">http://www.homepage.com</a></td>  			
+				  			<td class="col"><h2>Banner main</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/bannermain.gif</a></td>  			
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>
 				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col"><a href="">http://www.currently.com</a></td>
+				  			<td class="col"><h2>Sign up banner</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/bannermain.gif</a></td>
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>
 				  		<tr class="row">
-				  			<td class="col"><h2>Line header</h2></td>
-				  			<td class="col"><a href="">http://www.blurpix.com</a></td>
+				  			<td class="col"><h2>Banner left side</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/bannermain.gif</a></td>
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>
 				  		<tr class="row">
-				  			<td class="col"><h2>Your Site</h2></td>
-				  			<td class="col"><a href="">http://www.yoursite.com</a></td>
+				  			<td class="col"><h2>Vertical banner</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/vert.gif</a></td>
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>
 				  		<tr class="row">
-				  			<td class="col"><h2>Google</h2></td>
-				  			<td class="col"><a href="">http://www.google.com</a></td>
+				  			<td class="col"><h2>Front banner</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/front.gif</a></td>
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>
 				  		<tr class="row">
-				  			<td class="col"><h2>Facebook</h2></td>
-				  			<td class="col"><a href="">http://www.facebook.com</a></td>
-				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
-				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Dashboard</h2></td>
-				  			<td class="col"><a href="">http://www.dashboard.com</a></td>
-				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
-				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Blurax</h2></td>
-				  			<td class="col"><a href="">http://www.blurax.com</a></td>
-				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
-				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Piece of Wine</h2></td>
-				  			<td class="col"><a href="">http://www.pieceofwine.com</a></td>
-				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
-				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
-				  		</tr>
-				  		<tr class="row">
-				  			<td class="col"><h2>Twitter</h2></td>
-				  			<td class="col"><a href="">http://www.twitter.com</a></td>
+				  			<td class="col"><h2>Horizontal banner</h2></td>
+				  			<td class="col"><a href="">http://www.website.com/hotizontal.gif</a></td>
 				  			<td class="col-icon "><i class="glyphter icon-links link-icon"></i></td>
 				  			<td class="col-icon "><i class="glyphter icon-trash"></i></td>
 				  		</tr>

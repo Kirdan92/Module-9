@@ -57,9 +57,25 @@ header {
     overflow: auto;
     z-index: 1;
 }
-.show {display: flex;}
+.show {
+	display: flex;
+	.hide-nav {
+		display: block;
+	}
+}
 #notification-bell {
 	position: relative;
+	&::after {
+		content: "";
+		height: 7px;
+		width: 8px;
+		background-color: $dark-orange;
+		border-radius: 50%;
+		display: inline-block;
+		position: absolute;
+		top: 32%;
+		right: 0;
+	}
 }
 .new-notification {
   height: 7px;
@@ -70,10 +86,14 @@ header {
   position: absolute;
   top: 32%;
   right: 0;
-  z-index: 1;
 }
 #profile-nav {
 	a {
 		margin-left: 16px;
 	}
+}
+.hide-nav {
+	display: none;
+	text-align: center;
+	color: $navbar-font-color;
 }

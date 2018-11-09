@@ -1,6 +1,6 @@
 @import "../variables";
 
-button, .btn {
+button, .btn, input[type=submit] {
 	max-width: 130px;
 	max-height: 40px;
 	background-color: $dark-gray;
