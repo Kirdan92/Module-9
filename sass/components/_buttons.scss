@@ -2,7 +2,6 @@
 
 button, .btn, input[type=submit] {
 	max-width: 130px;
-	max-height: 40px;
 	background-color: $dark-gray;
 	border: none;
 	border-radius: 3px;
@@ -25,9 +24,39 @@ button, .btn, input[type=submit] {
 	}
 }
 .btn-sm {
-	width: 41px;
+	width: 50px;
+	max-width: 55px;
+	max-height: 55px;
+	height: 50px;
 }
 
 .btn-link {
 	margin: 23px auto;
+}
+
+/*Pagination*/
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: $links-color;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #f1f3f3;
+    color: $dark-gray;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: $dark-orange;
+    i {
+    	color: $dark-orange;
+    }
 }

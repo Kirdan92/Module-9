@@ -80,27 +80,63 @@
 			<section id="personaldata-section">
 				<h2 class="section-header">Personal data</h2>
 				<div class="section-body">	
-					<form action="#" method="POST">					    
-					  <div class="form-row">
-					    <label for="name"><h2>Name: </h2></label>
-					    <input type="text" name="name" id="name" placeholder="Your Name" required>
-					  </div>
-					   <div class="form-row">
-					    <label for="surname"><h2>Surname: </h2></label>
-					    <input type="text" name="surname" id="surname" placeholder="Your Surname" required>
-					  </div>
-					  <div class="form-row">
-					    <label for="email"><h2>E-mail: </h2></label>
-					    <input type="email" name="email" id="email" placeholder="Your email address" required>
-					  </div>
-					  <div class="form-row">
-					    <label for="phone"><h2>Phone number: </h2></label>
-					    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
-					  </div>
-					  <div class="form-row">
-					    <button class="btn-warning" type="submit" value="Submit">Submit</button>
-					  </div>
-					</form>
+						<form action="#" method="POST">	
+						<div class="form-part">	    
+						  <div class="form-row">
+						    	<label for="name"><h2>Name: </h2></label>
+						    	<input type="text" name="name" id="name" placeholder="Your Name" required>
+						  </div>
+						   <div class="form-row">
+						    	<label for="surname"><h2>Surname: </h2></label>
+						    	<input type="text" name="surname" id="surname" placeholder="Your Surname" required>
+						  </div>
+						  <div class="form-row">
+						    	<label for="email"><h2>E-mail: </h2></label>
+						    	<input type="email" name="email" id="email" placeholder="Your email address" required>
+						  </div>
+						  <div class="form-row">
+						    	<label for="phone"><h2>Phone number: </h2></label>
+						    	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+						  </div>
+						</div>
+						<div class="separator"></div>
+						<div class="form-part">
+							<div class="form-row">
+					   			<label for="skype"><h2>Skype: </h2></label>
+						    	<input type="text" name="skype" id="skype" placeholder="Skype ID" required>
+						  	</div>
+						  	<div class="form-row">
+						   			<label for="icq"><h2>ICQ: </h2></label>
+							    	<input type="text" name="ICQ" id="ICQ" placeholder="Your ICQ" required>
+						  	</div>
+						    <div class="form-row">
+					   			<label for="msn"><h2>Msn: </h2></label>
+						    	<input type="text" name="msn" id="msn" placeholder="Msn" required>
+						  	</div>
+						</div>
+						<div class="separator"></div>
+						<div class="form-part">
+							<div class="form-row">
+					   			<label for="wallet"><h2>Wallet: </h2></label>
+						    	<input type="text" name="wallet" id="wallet" placeholder="Wallet balance" required>
+						  	</div>
+						</div>
+						<div class="separator"></div>
+						<div class="form-part">
+							<div class="form-row">
+					   			<label for="password"><h2>Password: </h2></label>
+						    	<input type="password" name="password" id="password" placeholder="" required>
+						  	</div>
+						  	<div class="form-row">
+					   			<label for="repeat"><h2>Repeat: </h2></label>
+						    	<input type="password" name="repeat" id="repeat" placeholder="" required>
+						  	</div>
+						</div>
+						<div class="separator"></div>
+						  <div class="form-row center-btn">
+						    <button class="btn-warning" type="submit" value="Submit">Save</button>
+						  </div>
+						</form>
 				</div>	
 			</section>
 		</main>

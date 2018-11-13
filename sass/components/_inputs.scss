@@ -1,8 +1,8 @@
 @import "../variables";
 /*INPUTS*/
 form {
+	width: 100%;
     display: table;
-    padding: 20px 10px;
 }
 
 div.form-row {
@@ -86,4 +86,29 @@ input[type="date"] {
 		border-right: 1px solid $dark-gray;
 		margin-right: 15px;
 	}
-
+.form-part {
+	width: 550px;
+	margin: 0 auto;
+	padding: 20px 18px;
+	input[type=text], select, input[type="password"], input[type="email"], input[type="tel"] {
+		max-width: 400px;
+		width: 350px;
+	}
+	label {
+		max-width: 200px;
+		width: 200px;
+	}
+}
+.separator {
+	margin-bottom: 10px;
+	width: 100%;
+	border-bottom: 1px solid $light-gray;
+}
+.center-btn {
+	text-align: center;
+	button {
+		margin-top: 30px;
+		margin-bottom: 40px;
+		width: 100px;
+	}
+}

@@ -1,14 +1,19 @@
 @import "../variables";
 /*Table styles*/
+
 table {
 	margin-top: 40px; 
 	border-collapse: collapse;
 }
+.links-container {
+	text-align: center;
+}
 .link-table {
 	width: 686px;
+	text-align: left;
 }
 .row {
-	&:hover {
+	&:hover, &:active {
 		background-color: $light-gray;
 		cursor: pointer;
 		.col-icon {
@@ -45,28 +50,38 @@ table {
 	}
 }
 .large-table {
-	font-size: 13px;
-	th {
-		padding: 20px 14px;
-		color: $light-gray;
-		span {
-			padding: 8px;
-			border-radius: 3px;
-			i {
-				visibility: hidden;
-				margin-left: 10px;
-				font-size: 13px;
-				vertical-align: middle;
-			}
-			&:hover {
-				background-color: $bg-color;
-				color: $text-color;
-				cursor: pointer;
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	.header-row {
+		width: 100%;
+		th {
+			padding-bottom: 20px;
+			color: $table-header;
+			span {
+				padding: 5px;
+				border-radius: 3px;
 				i {
-					visibility: visible;
+					visibility: hidden;
+					margin-left: 10px;
+					font-size: 7px;
+					vertical-align: middle;
+				}
+				&:hover {
+					background-color: $bg-color;
+					color: $text-color;
+					cursor: pointer;
+					i {
+						visibility: visible;
+					}
 				}
 			}
 		}
+	}	
+	.col {
+		padding: 20px 8px;
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
 	}
 }
 .wallet-table {

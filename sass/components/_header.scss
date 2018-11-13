@@ -58,9 +58,11 @@ header {
     z-index: 1;
 }
 .show {
-	display: flex;
+	display: none;
 	.hide-nav {
-		display: block;
+		&:hover, &:active {
+			color: $yellow-color;
+		}
 	}
 }
 #notification-bell {

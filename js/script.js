@@ -33,6 +33,7 @@ function toggleHeader(visible) {
 
 document.querySelector('#hamburger').addEventListener('click', function(e) {
   e.preventDefault();
+  toggleHeader();
   switchSidebar();
 });
 /*Show-Hide Header - click on icon - arrow up*/
