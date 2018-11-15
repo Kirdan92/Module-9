@@ -3,6 +3,12 @@ var sidebar = document.getElementById("sidebar");
 var sidebarGrid = document.getElementById("sidebar-grid");
 var arrow = document.getElementById("wallet-arrow");
 var dropdowns = document.getElementsByClassName("dropdown-content");
+var login = document.getElementById("profile-nav");
+var logout = document.getElementById("quit-nav");
+var popupContainerLogin = document.getElementsByClassName("popup-container")[0];
+var popupContainerLogout = document.getElementsByClassName("popup-container")[1];
+var closeIcon = document.querySelector(".popup-container .close-popup-container i")
+var cancelBtn = document.getElementById("cancel-btn");
 
 
 // Close the dropdown if the user clicks outside of it
@@ -30,12 +36,11 @@ function switchSidebar() {
 function toggleHeader(visible) {
   header.classList.toggle('show', visible);
 }
-
 document.querySelector('#hamburger').addEventListener('click', function(e) {
   e.preventDefault();
-  toggleHeader();
   switchSidebar();
 });
+
 /*Show-Hide Header - click on icon - arrow up*/
 document.querySelector('.hide-nav i').addEventListener('click', function(e) {
   e.preventDefault();
@@ -53,3 +58,33 @@ function showDropdown() {
     document.getElementById("wallet-dropdown").classList.toggle("show");
     document.getElementById("wallet-arrow").classList.toggle("icon-arrow-up");
 }
+
+/* Popups */
+//login
+function togglePopup(visible) {
+  popupContainerLogin.classList.toggle('show-popup', visible);
+}
+
+login.addEventListener('click', function(e) {
+  e.preventDefault();
+  togglePopup();
+});
+
+closeIcon.addEventListener('click', function(e) {
+  e.preventDefault();
+  togglePopup();
+});
+
+//logout
+function togglePopupLogout(visible) {
+  popupContainerLogout.classList.toggle('show-popup', visible);
+}
+logout.addEventListener('click', function(e) {
+  e.preventDefault();
+  togglePopupLogout();
+});
+
+cancelBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  togglePopupLogout();
+});
