@@ -7,7 +7,7 @@ var login = document.getElementById("profile-nav");
 var logout = document.getElementById("quit-nav");
 var popupContainerLogin = document.getElementsByClassName("popup-container")[0];
 var popupContainerLogout = document.getElementsByClassName("popup-container")[1];
-var closeIcon = document.querySelector(".popup-container .close-popup-container i")
+var closeIcon = document.querySelector(".popup-container .close-popup-container i");
 var cancelBtn = document.getElementById("cancel-btn");
 
 
@@ -34,11 +34,18 @@ function switchSidebar() {
 }
 /*Show-Hide Header - click on Hamburger*/
 function toggleHeader(visible) {
-  header.classList.toggle('show', visible);
+  header.classList.toggle('show-header', visible);
 }
 document.querySelector('#hamburger').addEventListener('click', function(e) {
   e.preventDefault();
   switchSidebar();
+  if(sidebarGrid.classList.contains("sidebar-big")) {
+    toggleHeader();
+  } else if (sidebarGrid.classList.contains("sidebar-small")) {
+    toggleHeader();
+  } else {
+    console.log("err");
+  }
 });
 
 /*Show-Hide Header - click on icon - arrow up*/
@@ -81,10 +88,18 @@ function togglePopupLogout(visible) {
 }
 logout.addEventListener('click', function(e) {
   e.preventDefault();
-  togglePopupLogout();
+  if(sidebarGrid.classList.contains("sidebar-big")) {
+    toggleHeader();
+    switchSidebar();
+    togglePopupLogout();
+  } else {
+    togglePopupLogout();
+  }
+
 });
 
 cancelBtn.addEventListener('click', function(e) {
   e.preventDefault();
   togglePopupLogout();
 });
+

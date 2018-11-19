@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Banners</title>	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="vendor/css/Glyphter.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/css/Glyphter.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -57,20 +57,20 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="index.html"><i class="glyphter icon-general"></i><span class="sidebar-text">General</span></a></li>
-						<li><i class="glyphter icon-details"></i><span class="sidebar-text">Details</span></li>
+						<li><a href="../index.html"><i class="glyphter icon-general"></i><span class="sidebar-text">General</span></a></li>
+						<li><a href="details.html"><i class="glyphter icon-details"></i><span class="sidebar-text">Details</span></a></li>
 						<li><a href="links.html"><i class="glyphter icon-links"></i><span class="sidebar-text">Links</span></a></li>
 						<li class="active-page"><a href="banners.html"><i class="glyphter icon-banners"></i><span class="sidebar-text">Banners</span></a></li>
 						<li><a href="personaldata.html"><i class="glyphter icon-personaldata"></i><span class="sidebar-text">Personal data</span></a></li>
-						<li><i class="glyphter icon-payout"></i><span class="sidebar-text">Payout</span></li>
-						<li><i class="glyphter icon-postback"></i><span class="sidebar-text">Postback</span></li>
+						<li><a href="payout.html"><i class="glyphter icon-payout"></i><span class="sidebar-text">Payout</span></a></li>
+						<li><a href="postback.html"><i class="glyphter icon-postback"></i><span class="sidebar-text">Postback</span></a></li>
 					</ul>
 				</nav>
 				<hr>
 				<div class="sidebar-bottom">
 					<h2>Your Manager</h2>
 					<div class="sidebar-photo">
-						<img src="images/photo.png">
+						<img src="../images/photo.png">
 						<a href="#">Mikhael E.</a>
 					</div>
 				</div>
@@ -125,7 +125,31 @@
 				</div>
 			</section>
 		</main>
+			<div class="popup-container">
+				<section class="login-popup">
+					<h2 class="section-header">Login</h2>
+					<form class=login-form action="" method="POST">
+						 <div class="form-row">
+							    	<input type="text" name="login" id="login" placeholder="login name" required>
+							    	<input type="password" name="password" id="password" placeholder="password" required>
+							    	<button class="btn btn-warning btn-lg" type="submit" value="Submit">Enter</button>
+						  </div>
+					</form>
+				</section>
+				<div class="close-popup-container">
+					<i class="glyphter icon-close"></i>
+				</div>
+			</div>
+			<div class="popup-container">
+				<section class="close-popup">
+					<h2 class="section-header small-letters">Do you really want to Quit?</h2>
+						<div class="btn-container">
+					    	<button class="btn btn-lg" id="cancel-btn">Cancel</button>
+					    	<button class="btn btn-warning btn-lg">Quit</button>
+					    </div>	
+				</section>
+			</div>
 	</div>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

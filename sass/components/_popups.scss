@@ -1,9 +1,9 @@
 @import "../variables";
 /*INPUTS*/
 .popup-container {
-	width: 100%;
-	height: 100%;
-	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;
 	.login-popup {
@@ -34,7 +34,7 @@
 		padding: 5px;
 		position: absolute;
 		top: 60px;
-		right: 10px;
+		right: 20px;
 		i {
 			font-size: 28px;
 			color: #000000;
@@ -70,4 +70,23 @@
 }
 .show-popup {
 	display: block;
+}
+
+@media (max-width: 768px) {
+	.login-form {
+		padding: 15px 10px;
+		min-height: 180px;
+		max-height: 200px;
+		.form-row {
+			flex-direction: column;
+			input {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.popup-container {
+		.close-popup-container {
+			top: 65px;
+		}
+	}
 }
