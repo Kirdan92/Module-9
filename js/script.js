@@ -9,6 +9,7 @@ var popupContainerLogin = document.getElementsByClassName("popup-container")[0];
 var popupContainerLogout = document.getElementsByClassName("popup-container")[1];
 var closeIcon = document.querySelector(".popup-container .close-popup-container i");
 var cancelBtn = document.getElementById("cancel-btn");
+var popups = document.getElementsByClassName('popup-container');
 
 
 // Close the dropdown if the user clicks outside of it
@@ -84,9 +85,15 @@ closeIcon.addEventListener('click', function(e) {
 
 //logout
 function togglePopupLogout(visible) {
+   document.querySelectorAll('#login-overlay > *').forEach(function(modal) {
+    modal.classList.remove('show')
+  })
   popupContainerLogout.classList.toggle('show-popup', visible);
 }
 logout.addEventListener('click', function(e) {
+  document.querySelectorAll('#logout-overlay > *').forEach(function(modal) {
+  modal.classList.remove('show')
+  })
   e.preventDefault();
   if(sidebarGrid.classList.contains("sidebar-big")) {
     toggleHeader();
@@ -102,4 +109,38 @@ cancelBtn.addEventListener('click', function(e) {
   e.preventDefault();
   togglePopupLogout();
 });
+
+/*Modals*/
+function closeModal() {  
+  for(var i = 0; i < popups.length; i++) {
+    popups[i].classList.remove("show-popup");
+  }
+}
+
+document.querySelectorAll('.popup-container .js--close-modal').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault()
+    closeModal()
+  })
+})
+
+
+/*Close modals on backgond click */
+popups[0].addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal()
+  }
+})
+popups[1].addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal()
+  }
+})
+/*Close modals on with esc key */
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal()
+  }
+})
+
 

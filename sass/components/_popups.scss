@@ -1,24 +1,33 @@
 @import "../variables";
 /*INPUTS*/
-.popup-container {
+.popup-container, .overlay {
 	width: 100vw;
 	height: 100vh;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;
 	.login-popup {
+		margin: auto;
 		max-width: 700px;
 		position: absolute;
+		/*
 		left: 50%;
 		transform: translateX(-50%);
 		top: 60px;
+		*/
+		position: relative;
+		.btn-close {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  padding: 5px 10px;
+		}
 	}	
 	.close-popup {
 		max-width: 350px;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		top: 300px;
+		position: relative;
 		.btn-container {
 			height: 80px;
 			display: flex;
@@ -28,6 +37,12 @@
 			button {
 				max-width: 100px;
 			}
+		}
+		.btn-close {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  padding: 5px 10px;
 		}
 	}	
 	.close-popup-container{
@@ -69,7 +84,7 @@
 	}
 }
 .show-popup {
-	display: block;
+	display: flex;
 }
 
 @media (max-width: 768px) {

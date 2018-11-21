@@ -149,7 +149,7 @@
 				</div>
 			</section>
 		</main>
-		<div class="popup-container">
+			<div class="popup-container" id="login-overlay">
 				<section class="login-popup">
 					<h2 class="section-header">Login</h2>
 					<form class=login-form action="" method="POST">
@@ -159,18 +159,20 @@
 							    	<button class="btn btn-warning btn-lg" type="submit" value="Submit">Enter</button>
 						  </div>
 					</form>
+					<div class="btn-close js--close-modal"><i class="glyphter icon-close"></i></div>
 				</section>
 				<div class="close-popup-container">
-					<i class="glyphter icon-close"></i>
+					<i class="glyphter icon-close js--close-modal"></i>
 				</div>
 			</div>
-			<div class="popup-container">
+			<div class="popup-container" id="logout-overlay">
 				<section class="close-popup">
 					<h2 class="section-header small-letters">Do you really want to Quit?</h2>
 						<div class="btn-container">
 					    	<button class="btn btn-lg" id="cancel-btn">Cancel</button>
 					    	<button class="btn btn-warning btn-lg">Quit</button>
 					    </div>	
+					    <div class="btn-close js--close-modal"><i class="glyphter icon-close"></i></div>
 				</section>
 			</div>
 	</div>

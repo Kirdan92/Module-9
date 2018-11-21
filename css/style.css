@@ -1091,31 +1091,41 @@ header nav ul li:hover i, header nav ul li:hover a, header nav ul li:hover .smal
 /* Font sizes */
 /* Fonts */
 /*INPUTS*/
-.popup-container {
+.popup-container, .overlay {
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
 
-.popup-container .login-popup {
+.popup-container .login-popup, .overlay .login-popup {
+  margin: auto;
   max-width: 700px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60px;
+  /*
+		left: 50%;
+		transform: translateX(-50%);
+		top: 60px;
+		*/
+  position: relative;
 }
 
-.popup-container .close-popup {
-  max-width: 350px;
+.popup-container .login-popup .btn-close, .overlay .login-popup .btn-close {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 300px;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
 }
 
-.popup-container .close-popup .btn-container {
+.popup-container .close-popup, .overlay .close-popup {
+  max-width: 350px;
+  position: relative;
+}
+
+.popup-container .close-popup .btn-container, .overlay .close-popup .btn-container {
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -1123,23 +1133,30 @@ header nav ul li:hover i, header nav ul li:hover a, header nav ul li:hover .smal
   align-items: center;
 }
 
-.popup-container .close-popup .btn-container button {
+.popup-container .close-popup .btn-container button, .overlay .close-popup .btn-container button {
   max-width: 100px;
 }
 
-.popup-container .close-popup-container {
+.popup-container .close-popup .btn-close, .overlay .close-popup .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+.popup-container .close-popup-container, .overlay .close-popup-container {
   padding: 5px;
   position: absolute;
   top: 60px;
   right: 20px;
 }
 
-.popup-container .close-popup-container i {
+.popup-container .close-popup-container i, .overlay .close-popup-container i {
   font-size: 28px;
   color: #000000;
 }
 
-.popup-container .close-popup-container i:hover {
+.popup-container .close-popup-container i:hover, .overlay .close-popup-container i:hover {
   color: #ffffff;
 }
 
@@ -1169,7 +1186,7 @@ header nav ul li:hover i, header nav ul li:hover a, header nav ul li:hover .smal
 }
 
 .show-popup {
-  display: block;
+  display: flex;
 }
 
 @media (max-width: 768px) {
